@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayra 😊</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+
+  <!-- Logo image on top right -->
+  <div class="logo-container">
+    <img src="{{ url_for('static', filename='ayra_img.webp') }}" alt="Logo" class="logo-image" />
+  </div>
+
+  <!-- Developer tag -->
+  <div class="developer">Developed by Yadhu</div>
+
+  <!-- Title -->
+  <h1 style="font-size = 30px;">Ayra 😊</h1>
+
+  <!-- Response Section -->
+  <div class="response-box">
+    {% if ai_response %}
+      <p><strong>Ayra:</strong> {{ ai_response }}</p>
+    {% else %}
+      <p><i>Ask me something...</i></p>
+    {% endif %}
+  </div>
+
+  <!-- Input Section -->
+  <form method="POST" class="input-section">
+    <input type="text" name="text_input" placeholder="Type your message..." required />
+    <button type="submit">➤</button>
+  </form>
+
+</body>
+</html>
