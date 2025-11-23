@@ -3,7 +3,7 @@ import json
 
 class Memory:
     def memory(self, chat):
-        file_path = r"C:\PROJECTS\AYRA_\ayra-jarvis\ayra_v2_0\MEMORY\history.json"
+        file_path = r"ayra_v2_0\MEMORY\history.json"
 
         try:
             with open(file_path, "r", encoding="utf-8") as f:
@@ -16,3 +16,4 @@ class Memory:
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
         print("Memory updated!")
+
