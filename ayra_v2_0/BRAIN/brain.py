@@ -1,9 +1,7 @@
 import google.generativeai as genai
-# from API_KEY import API
 
-# a = API
 
-api_key = "AIzaSyD7ek8MntcCYSVl7LmRHyDXrbPDdjdulNI"
+api_key = "YOUR_API_KEY"
 
 class Ayra:
     def __init__(self):
@@ -26,4 +24,5 @@ class Ayra:
 
     def ai(self, text):
         response = self.model.generate_content(text)
+
         return response.text
