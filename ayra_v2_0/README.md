@@ -50,3 +50,4 @@ ayra_v2_0/
 4. 💾 Saves chat history in `MEMORY/history.json`
 5. 🔊 Speaks the response using `pyttsx3`
 
+### AFTER DOWNLOAI=DINF THE FILE RUN **main.py**
